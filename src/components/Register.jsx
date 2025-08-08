@@ -20,7 +20,7 @@ export default function Register() {
       setErro("");
       setSucesso("");
       
-      // Validações básicas
+      
       if (!email || !senha || !phone) {
         setErro("Preencha todos os campos");
         return;
@@ -31,10 +31,10 @@ export default function Register() {
         return;
       }
 
-      // Criar usuário no Firebase Auth
+      
       const { user } = await createUserWithEmailAndPassword(auth, email, senha);
       
-      // Salvar dados do usuário no Firestore
+    
       await setDoc(doc(db, "users", user.uid), {
         role: "doador",
         phone: phone,
@@ -44,7 +44,7 @@ export default function Register() {
       
       setSucesso("Conta criada com sucesso! Redirecionando...");
       
-      // Redirecionar após 1.5 segundos
+     
       setTimeout(() => {
         navigate("/painel-doador");
       }, 1500);
@@ -113,4 +113,5 @@ export default function Register() {
       </form>
     </div>
   );
+
 }
