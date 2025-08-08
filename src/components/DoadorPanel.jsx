@@ -41,7 +41,7 @@ export default function DoadorPanel() {
     setShowToast(true);
     setTimeout(() => {
       setShowToast(false);
-      loadDonations(); // Recarrega a lista após enviar uma nova doação
+      loadDonations(); 
     }, 2000);
   };
 
@@ -80,4 +80,5 @@ export default function DoadorPanel() {
       </div>
     </>
   );
+
 }
