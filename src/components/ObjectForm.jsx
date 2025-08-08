@@ -25,7 +25,7 @@ export default function ObjectForm({ onSent }) {
       setTitle("");
       setDesc("");
       setPhone("");
-      onSent(); // Chama a função para notificar o componente pai
+      onSent();
     } catch (e) {
       console.error("Erro ao adicionar doação: ", e);
       alert("Ocorreu um erro ao enviar sua doação.");
@@ -41,4 +41,5 @@ export default function ObjectForm({ onSent }) {
       <button type="submit">Enviar para aprovação</button>
     </form>
   );
+
 }
