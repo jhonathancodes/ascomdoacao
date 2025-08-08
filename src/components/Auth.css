@@ -1,10 +1,9 @@
-/* estilos básicos para formulários */
 form { max-width: 300px; margin: auto; display: flex; flex-direction: column; }
 input, button { margin: 8px 0; padding: 8px; }
 .error { color: red; }
 .toast { position: fixed; bottom: 20px; right: 20px; background: #333; color: #fff; padding: 10px; border-radius: 4px; }
 
-/* Container principal da autenticação */
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -14,7 +13,7 @@ input, button { margin: 8px 0; padding: 8px; }
   padding: 20px;
 }
 
-/* Formulário de autenticação */
+
 .auth-form {
   background: white;
   padding: 30px;
@@ -33,7 +32,7 @@ input, button { margin: 8px 0; padding: 8px; }
   font-size: 24px;
 }
 
-/* Campos de input */
+
 .auth-form input {
   margin-bottom: 15px;
   padding: 12px;
@@ -49,7 +48,7 @@ input, button { margin: 8px 0; padding: 8px; }
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
-/* Botão principal */
+
 .auth-button {
   background-color: #007bff;
   color: white;
@@ -72,7 +71,7 @@ input, button { margin: 8px 0; padding: 8px; }
   cursor: not-allowed;
 }
 
-/* Mensagens de erro e sucesso */
+
 .error {
   color: #dc3545;
   background-color: #f8d7da;
@@ -93,7 +92,7 @@ input, button { margin: 8px 0; padding: 8px; }
   text-align: center;
 }
 
-/* Seção de alternância entre login/cadastro */
+
 .auth-toggle {
   text-align: center;
   color: #666;
@@ -114,7 +113,7 @@ input, button { margin: 8px 0; padding: 8px; }
   color: #0056b3;
 }
 
-/* Toast para notificações */
+
 .toast {
   position: fixed;
   bottom: 20px;
@@ -234,3 +233,4 @@ input, button { margin: 8px 0; padding: 8px; }
     overflow: auto;
   }
 }
+
