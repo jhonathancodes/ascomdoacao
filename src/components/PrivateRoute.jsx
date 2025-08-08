@@ -87,7 +87,7 @@ export default function PrivateRoute({ children, requiredRole }) {
 
   if (!status.hasRequiredRole) {
     console.log("Redirecionando para login - sem permissão");
-    // Redireciona para o painel apropriado baseado no role do usuário
+
     if (status.userRole === "admin") {
       return <Navigate to="/painel-admin" replace />;
     } else if (status.userRole === "doador") {
@@ -99,4 +99,5 @@ export default function PrivateRoute({ children, requiredRole }) {
 
   console.log("Acesso liberado para:", status.userRole);
   return children;
+
 }
